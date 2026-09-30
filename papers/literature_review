@@ -1,1 +1,61 @@
+# Literature Review
+## Satellite Image Super-Resolution
 
+### 1. Problem Background
+
+Satellite images may have limited spatial resolution, which can
+make small structures and fine details difficult to observe.
+Super-resolution aims to reconstruct a high-resolution image from
+a low-resolution input.
+
+### 2. Traditional Methods
+
+Interpolation methods such as nearest-neighbor, bilinear and
+bicubic interpolation can increase image dimensions. However,
+they do not learn complex image features and may produce blurred
+details.
+
+### 3. CNN-Based Super-Resolution
+
+Convolutional neural networks learn feature representations from
+low-resolution images and use these features to reconstruct
+high-resolution images.
+
+### 4. GAN-Based Super-Resolution
+
+Generative Adversarial Networks use a generator and discriminator.
+The generator attempts to reconstruct realistic high-resolution
+images, while the discriminator distinguishes generated images
+from real images.
+
+### 5. Real-ESRGAN
+
+Real-ESRGAN is a practical image restoration and super-resolution
+approach. In this project, it will be investigated as a pretrained
+baseline for satellite image super-resolution.
+
+### 6. Transformer-Based Super-Resolution
+
+Transformer-based architectures can model relationships between
+different regions of an image and capture long-range dependencies.
+
+### 7. Swin Transformer
+
+Swin Transformer uses hierarchical representations and shifted
+windows to efficiently model visual information.
+
+### 8. Proposed Research Direction
+
+The project will investigate a Transformer/GAN-based approach for
+satellite image super-resolution. The proposed approach will be
+compared with a traditional bicubic baseline and a pretrained
+Real-ESRGAN baseline.
+
+### 9. Evaluation Metrics
+
+The primary evaluation metrics will be:
+
+- PSNR (Peak Signal-to-Noise Ratio)
+- SSIM (Structural Similarity Index)
+
+Both quantitative metrics and visual comparisons will be used.
